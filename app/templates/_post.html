@@ -6,9 +6,11 @@
                 </a>
             </td>
             <td>
-                <a href="{{ url_for('main.user', username=post.author.username) }}" class="user_popup">
-                    {{ post.author.username }}
-                </a>
+                <span class="user_popup">
+                    <a href="{{ url_for('main.user', username=post.author.username) }}" class="user_popup">
+                        {{ post.author.username }}
+                    </a>
+                </span>
 
                 {{_('said')}} {{ moment(post.timestamp).fromNow() }}:
                 <br>

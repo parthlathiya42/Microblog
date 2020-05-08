@@ -63,6 +63,57 @@
 
     <script>
 
+        $(function() {
+
+        // write start up code here
+        timer = null;
+        var xhr = null;     //hold the asynchronous request object
+
+        $('.user_popup').hover(
+            function(event) {
+                // mouse in event handler
+                var elem = $(event.currentTarget);      //elem = <span>
+                
+                //wait 1 sec to response
+                timer = setTimeout(function() {
+                    timer = null;
+                    xhr = $.ajax(                       //send asyncronous req.
+                    '/user/' + elem.first().text().trim() + '/popup').done(
+                        function(data) {        //received return data from route i.e., rendered template
+                            xhr = null
+                            // create and display popup here
+                            elem.popover({
+                                    trigger: 'manual',
+                                    html: true,
+                                    animation: false,
+                                    container: elem,
+                                    content: data
+                                }).popover('show');
+                            flask_moment_render_all();
+                        }
+                    );
+                    
+                }, 1000);
+            },
+            function(event) {
+                // mouse out event handler
+                var elem = $(event.currentTarget);
+                if (timer) {
+                    clearTimeout(timer);
+                    timer = null;
+                }else if (xhr) {
+                    xhr.abort();
+                    xhr = null;
+                }
+                else {
+                    // destroy popup here
+                    elem.popover('destroy');
+                }
+            }
+        )
+        });
+
+        //sort of making an ajax request
         function translate(sourceElem, destElem, sourceLang, destLang) {
             $(destElem).html("<img src='{{ url_for('static', filename='loading.gif') }}>");
             $.post("/translate", {

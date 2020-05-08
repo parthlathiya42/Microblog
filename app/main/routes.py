@@ -92,6 +92,12 @@ def follow(username):
     flash(_l('You are following %(username)s!', username=username))
     return redirect(url_for('main.user', username=username))
 
+@bp.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    return render_template('user_popup.html', user=user)
+
 @bp.route('/unfollow/<username>')
 @login_required
 def unfollow(username):
