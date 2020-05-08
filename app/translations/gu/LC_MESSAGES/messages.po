@@ -1,0 +1,214 @@
+# Gujarati translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-04-25 20:37+0530\n"
+"PO-Revision-Date: 2020-04-25 12:03+0530\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: gu\n"
+"Language-Team: gu <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: app/forms.py:12 app/forms.py:18 app/forms.py:36
+msgid "Username"
+msgstr "વપરાશકર્તા નામ"
+
+#: app/forms.py:13 app/forms.py:20 app/forms.py:50
+msgid "Password"
+msgstr "પાસવર્ડ"
+
+#: app/forms.py:14
+msgid "Remember Me"
+msgstr "મને યાદ"
+
+#: app/forms.py:15 app/templates/auth/login.html:5
+msgid "Sign In"
+msgstr "સાઇન ઇન"
+
+#: app/forms.py:19 app/forms.py:46
+msgid "Email"
+msgstr "ઇમેઇલ"
+
+#: app/forms.py:22 app/forms.py:51
+msgid "Repeat Password"
+msgstr "પાસવર્ડ નું પુનરાવર્તન કરો"
+
+#: app/forms.py:23
+msgid "Register"
+msgstr "નોંધણી કરો"
+
+#: app/forms.py:28
+msgid "Please use a different username."
+msgstr "કૃપા કરી કોઈ અલગ વપરાશકર્તા નામનો ઉપયોગ કરો."
+
+#: app/forms.py:33
+msgid "Please use a different email address."
+msgstr "કૃપા કરી કોઈ અલગ ઇમેઇલ સરનામું વાપરો."
+
+#: app/forms.py:37
+msgid "About me"
+msgstr "મારા વિશે"
+
+#: app/forms.py:38 app/forms.py:43
+msgid "Submit"
+msgstr "સબમિટ કરો"
+
+#: app/forms.py:42
+msgid "Say something"
+msgstr "કંઈક બોલ"
+
+#: app/forms.py:47 app/forms.py:52
+msgid "Request Password Reset"
+msgstr "વિનંતી પાસવર્ડ ફરીથી સેટ કરો"
+
+#: app/routes.py:62
+msgid "Your post is now live."
+msgstr "તમારી પોસ્ટ હવે લાઇવ થઈ ગઈ છે."
+
+#: app/routes.py:84
+msgid "Invalid username or password"
+msgstr "અયોગ્ય વપરાશકર્તાનામ અથવા પાસવર્"
+
+#: app/routes.py:109
+msgid "Congratulations, you are now a registered user!"
+msgstr "અભિનંદન, તમે હવે રજિસ્ટર્ડ યુઝર છો!"
+
+#: app/routes.py:134
+msgid "Your changes have been saved."
+msgstr "તમારા ફેરફારો સંગ્રહાયેલ છે."
+
+#: app/routes.py:146
+#, python-format
+msgid "User %(username)s not found."
+msgstr "વપરાશકર્તા %(username)s મળ્યુ નથી."
+
+#: app/routes.py:149
+msgid "You cannot follow yourself!"
+msgstr "તમે તમારી જાતને અનુસરી શકતા નથી!"
+
+#: app/routes.py:153
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "તમે %(username)s ને અનુસરી રહ્યા છો!"
+
+#: app/routes.py:161
+#, python-format
+msgid "User %(username)s not found"
+msgstr "વપરાશકર્તા %(username)s મળ્યુ નથી"
+
+#: app/routes.py:164
+msgid "You cannot unfollow yourself!"
+msgstr "તમે તમારી જાતને અનફોલો કરી શકો નહીં!"
+
+#: app/routes.py:168
+#, python-format
+msgid "You are not following %(username)s"
+msgstr "તમે %(username)s ને અનુસરી રહ્યા નથી"
+
+#: app/routes.py:191
+msgid "Check your email for the instructions to reset your password"
+msgstr "તમારા પાસવર્ડને ફરીથી સેટ કરવા માટેની સૂચનાઓ માટે તમારું ઇમેઇલ તપાસો"
+
+#: app/routes.py:206
+msgid "Your password has been reset."
+msgstr "તમારો પાસવર્ડ ફરીથી સેટ કરવામાં આવ્યો છે."
+
+#: app/translate.py:21
+msgid "Error: the translation service is not configured."
+msgstr "ભૂલ: અનુવાદ સેવા ગોઠવેલ નથી."
+
+#: app/translate.py:25
+msgid "Error: the translation service failed."
+msgstr "ભૂલ: અનુવાદ સેવા નિષ્ફળ."
+
+#: app/templates/_post.html:16
+msgid "said"
+msgstr "કહ્યું"
+
+#: app/templates/_post.html:26 app/templates/_post.html:31
+msgid "Translate"
+msgstr "ભાષાંતર"
+
+#: app/templates/base.html:6
+msgid "Welcome to Microblog"
+msgstr "સ્વાગત Microblog માં"
+
+#: app/templates/base.html:16
+msgid "Toggle navigation"
+msgstr "ટગલ નેવિગેશન"
+
+#: app/templates/base.html:25
+msgid "Home"
+msgstr "ખેર"
+
+#: app/templates/base.html:26
+msgid "Explore"
+msgstr "અન્વેષણ કરો"
+
+#: app/templates/base.html:37
+msgid "Login"
+msgstr "પ્રવેશ કરો"
+
+#: app/templates/base.html:40
+msgid "Profile"
+msgstr "પ્રોફાઇલ"
+
+#: app/templates/base.html:41
+msgid "Logout"
+msgstr "લૉગ આઉટ"
+
+#: app/templates/base.html:82
+msgid "Error: Could not contact server."
+msgstr "ભૂલ: સર્વરનો સંપર્ક કરી શકાયું નહીં."
+
+#: app/templates/index.html:6
+#, python-format
+msgid "Hi, %(username)s"
+msgstr "હાય, %(username)s"
+
+#: app/templates/index.html:7
+#, python-format
+msgid "welcome %(username)s"
+msgstr "સ્વાગત %(username)s"
+
+#: app/templates/index.html:19
+msgid "Newer posts"
+msgstr "નવી પોસ્ટ્સ"
+
+#: app/templates/index.html:24
+msgid "Older posts"
+msgstr "જૂની પોસ્ટ્સ"
+
+#: app/templates/auth/login.html:12
+msgid "New User?"
+msgstr "નવા વપરાશકર્તા?"
+
+#: app/templates/auth/login.html:12
+msgid "Click to Register!"
+msgstr "નોંધણી કરવા માટે ક્લિક કરો"
+
+#: app/templates/auth/login.html:14
+msgid "Forgot Your Password?"
+msgstr "નોંધણી કરવા માટે ક્લિક કરો!"
+
+#: app/templates/auth/login.html:15
+msgid "Click to Reset It"
+msgstr "તેને ફરીથી સેટ કરવા માટે ક્લિક કરો"
+
+#: app/templates/auth/reset_password.html:5
+msgid "Reset Password"
+msgstr "પાસવર્ડ ફરીથી સેટ કરો"
+
+#: app/templates/auth/reset_password_request.html:5
+msgid "Reset Your Password"
+msgstr "તમારો પાસવર્ડ ફરીથી સેટ કરો"
+
